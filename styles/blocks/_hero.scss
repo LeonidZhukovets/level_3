@@ -1,0 +1,45 @@
+.hero {
+	padding: 200px 0 180px;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)),
+		url('../../assets/img/hero_bj.jpg') center/cover no-repeat;
+
+	&__content {
+		display: flex;
+		align-items: flex-start;
+		column-gap: 60px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 50px;
+
+		>.logo {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 56px;
+		text-transform: uppercase;
+		color: $main_white;
+	}
+
+
+
+	&__divider {
+		width: 170px;
+	}
+
+	&__description {
+		max-width: 270px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: $main_white;
+	}
+}

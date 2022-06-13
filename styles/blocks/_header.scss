@@ -1,0 +1,31 @@
+.header {
+	background-color: $main_black_dark;
+
+
+	&__inner {
+		height: 75px;
+		display: flex;
+		align-items: center;
+
+	}
+
+	&__nav {}
+
+	&__links {
+		width: 100%;
+		display: flex;
+	}
+
+	&__link {
+		width: 114px;
+		height: 75px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 19px;
+		color: $main_white;
+		text-transform: capitalize;
+		margin: 0 auto;
+
+	}
+}
