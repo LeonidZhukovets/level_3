@@ -1,0 +1,66 @@
+.tabs-section {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.tabs {
+    position: relative;
+    display: flex;
+
+
+}
+
+.label-tab {
+    width: min(32vw, 150px);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1px;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tabs__content {
+    visibility: hidden;
+    background-color: #e2e6fd;
+    border: 1px solid rgb(111, 111, 111);
+    border-radius: 0 3px 3px 3px;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    z-index: 1;
+}
+
+#first-title-id:checked~.tabs__content-first,
+#second-title-id:checked~.tabs__content-second,
+#third-title-id:checked~.tabs__content-third {
+    visibility: visible;
+}
+
+#first-title-id:checked~.label-tab-1,
+#second-title-id:checked~.label-tab-2,
+#third-title-id:checked~.label-tab-3 {
+    background-color: #e2e6fd;
+    border: 1px solid rgb(111, 111, 111);
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+}
+
+.tads__img {
+    background: url("../../assets/img/img__freedom.jpg") center/cover no-repeat;
+    width: 40%;
+    height: 470;
+    position: relative;
+    top: 41px;
+}

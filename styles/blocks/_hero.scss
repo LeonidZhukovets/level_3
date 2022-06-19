@@ -1,8 +1,6 @@
 .hero {
 	padding: 200px 0 180px;
-	background:
-		linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)),
-		url('../../assets/img/hero_bj.jpg') center/cover no-repeat;
+	background: url('/assets/img/hero_bj.jpg') center/cover no-repeat;
 
 	&__content {
 		display: flex;

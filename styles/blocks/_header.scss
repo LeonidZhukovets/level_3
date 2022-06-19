@@ -1,31 +1,58 @@
 .header {
 	background-color: $main_black_dark;
+	width: 100%;
+	height: 75px;
 
 
 	&__inner {
-		height: 75px;
 		display: flex;
 		align-items: center;
-
-	}
-
-	&__nav {}
-
-	&__links {
+		justify-content: space-between;
 		width: 100%;
-		display: flex;
+		height: 75px;
 	}
 
-	&__link {
-		width: 114px;
-		height: 75px;
+	&__nav {
+		width: 575px;
+		height: 100%;
+	}
+
+	&__nav-list {
+		display: flex;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__nav-item {
+		width: 115px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+
+	&__nav-item:hover {
+		background-color: $main_coral;
+	}
+
+	&__nav-item:active {
+		background-color: $main_dark_coral;
+
+	}
+
+
+	&__nav-link {
 		text-decoration: none;
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 19px;
 		color: $main_white;
 		text-transform: capitalize;
-		margin: 0 auto;
+	}
 
+	&__nav-link:hover {
+		text-transform: uppercase;
 	}
 }
