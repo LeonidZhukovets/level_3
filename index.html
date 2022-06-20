@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/favicon/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -41,6 +42,37 @@
             </li>
           </ul>
         </nav>
+        <input type="checkbox" name="burger-input" id="burger_checkbox" class="input-burger">
+        <label for="burger_checkbox" class="burger__label">
+          <svg>
+            <use href="./assets/icons/sprites.svg#icon_burger"></use>
+          </svg>
+        </label>
+
+        <div class="burger__menu">
+
+          <label for="burger_checkbox" class="burger__close">X</label>
+          <nav>
+            <ul class="burger__nav-list">
+              <li class="burger__nav-item">
+                <a href="/" class="burger__nav-link">features</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="/" class="burger__nav-link">about</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="/" class="burger__nav-link">pricing</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="/" class="burger__nav-link">reviews</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="/" class="burger__nav-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
     </div>
   </header>
@@ -131,7 +163,8 @@
         </div>
       </div>
     </section>
-    <section class="tabs-section">
+
+    <!-- <section class="tabs-section">
       <div class="container">
         <div class="tabs">
           <input type="radio" name="button-title" id="first-title-id" checked>
@@ -141,6 +174,7 @@
           <label class="label-tab label-tab-1" for="first-title-id">tab 1</label>
           <label class="label-tab label-tab-2" for="second-title-id">tab 2</label>
           <label class="label-tab label-tab-3" for="third-title-id">tab 3</label>
+
           <section class="tabs__content tabs__content-first">
             <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
             <h5 class="tabs__discription">First Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -191,7 +225,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
     <section class="about">
       <div class="container">
@@ -358,14 +392,74 @@
         <h2 class="contact__title">contact us</h2>
         <hr class="contact__divider">
         <h5 class="contact__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+
+        <form action="mailto:leonid.zhukovets@gmail.com" method="post" class="form-contact">
+          <div class="form__info">
+            <label for="input-name" class="form__label form-contact__label">Name</label>
+            <input type="text" name="name" id="input-name" required class="form__input form-contact__input" />
+
+            <label for="input-password" class="form__label form-contact__label">Password</label>
+            <input type="password" name="password" id="input-password" required
+              class="form__input form-contact__input" />
+
+            <label for="input-email" class="form__label form-contact__label form-contact__label--margin">Email</label>
+            <input type="email" name="email" id="input-email" required class="form__input form-contact__input" />
+          </div>
+
+          <div class="form__text">
+            <label for="input-message" class="form__label form-contact__label">Message</label>
+            <input type="text" name="message" id="input-message" required class="form__input form-contact__input" />
+          </div>
       </div>
+      </form>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__icons">
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#twitter"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#linkedin"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#pinterest"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#instagram"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="./assets/icons/sprites.svg#rss"></use>
+          </svg>
+        </a>
+      </div>
+      <h5 class="footer__info">© 2015 Axure Themes</h5>
+    </div>
+  </footer>
 
-  <!-- <svg class="logo">
-        <use href="./assets/icons/sprites.svg#logo"></use>
-    </svg> -->
+  <!-- <svg>
+    <use href="./assets/icons/sprites.svg#icon_burger"></use>
+  </svg> -->
 </body>
 
 </html>

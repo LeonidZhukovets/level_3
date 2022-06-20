@@ -13,6 +13,12 @@
 	color: $main_white;
 	transition: border 0.3s, color 0.3s;
 
+	@media (max-width: $screen-tablet) {
+
+		margin-left: 75px;
+		padding: 1em 3em;
+	}
+
 	&:hover {
 		cursor: pointer;
 		border: 2px solid $main_coral;

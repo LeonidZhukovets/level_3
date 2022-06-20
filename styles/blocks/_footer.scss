@@ -1,0 +1,35 @@
+.footer {
+    background-color: $main_black_dark;
+
+    &__icons {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            padding: 35px 0 35px;
+
+            svg {
+
+                width: 55px;
+                height: 55px;
+                transform: translateY(0);
+                transition: all .5s;
+            }
+
+            svg:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+
+    &__info {
+        padding-bottom: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

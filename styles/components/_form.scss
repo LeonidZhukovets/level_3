@@ -82,3 +82,81 @@
 		}
 	}
 }
+
+.form-contact {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+	row-gap: 55px;
+
+	@media (max-width: $screen-xl-min) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media (max-width: $screen-tablet) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@media (max-width: $screen-md-min) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	@media (max-width: $screen-sm-min) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	&__input {
+		width: 570px;
+
+		@media (max-width: $screen-xl-min) {
+			width: 470px;
+		}
+
+		@media (max-width: $screen-lg-min) {
+			width: 380px;
+		}
+
+		@media (max-width: $screen-md-min) {
+			width: 400px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			width: 280px;
+		}
+	}
+
+	&__label {
+		margin-top: 40px;
+
+		@media (max-width: $screen-md-min) {
+			margin-top: 20px;
+		}
+	}
+
+	.form__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.form__text {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		row-gap: 214px;
+
+		@media (max-width: $screen-md-min) {
+			row-gap: 50px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			row-gap: 100px;
+		}
+	}
+}
