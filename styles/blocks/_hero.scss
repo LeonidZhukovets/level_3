@@ -9,6 +9,7 @@
 
 		@media (max-width: $screen-md-min) {
 			flex-wrap: wrap;
+			justify-content: center;
 		}
 	}
 
@@ -20,6 +21,11 @@
 
 		>.logo {
 			margin-bottom: 20px;
+		}
+
+		@media (max-width: $screen-md-min) {
+			align-items: center;
+			;
 		}
 	}
 
@@ -35,7 +41,15 @@
 			line-height: 42px;
 			margin-left: 75px;
 		}
+
+		@media (max-width: $screen-md-min) {
+			text-align: center;
+			margin-left: 30px;
+			margin-right: 30px;
+		}
 	}
+
+
 
 
 
@@ -45,6 +59,10 @@
 		@media (max-width: $screen-tablet) {
 			width: 116px;
 			margin-left: 75px;
+		}
+
+		@media (max-width: $screen-md-min) {
+			margin-left: 0;
 		}
 	}
 
@@ -59,6 +77,11 @@
 			font-size: 14px;
 			line-height: 16px;
 			margin-left: 75px;
+		}
+
+		@media (max-width: $screen-md-min) {
+			text-align: center;
+			margin-left: 0;
 		}
 	}
 }

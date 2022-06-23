@@ -19,9 +19,39 @@
 		padding: 1em 3em;
 	}
 
+	@media (max-width: $screen-md-min) {
+		margin-left: 0;
+	}
+
 	&:hover {
 		cursor: pointer;
 		border: 2px solid $main_coral;
 		color: $main_coral;
+	}
+}
+
+.btn-tab {
+	border: none;
+	background-color: $main_coral;
+	padding: 18px 90px;
+	transition: background-color 0.3s, border 0.3s;
+	cursor: pointer;
+	margin-top: 27px;
+	margin-left: 65px;
+
+	&:hover {
+		background-color: $main_dark_coral;
+	}
+
+	@media (max-width: $screen-tablet) {
+		padding: 18px 70px;
+		margin-top: 35px;
+	}
+
+	@media (max-width: $screen-sm-min) {
+		padding: 14px 75px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 29px;
 	}
 }

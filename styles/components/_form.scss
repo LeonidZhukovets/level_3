@@ -8,8 +8,17 @@
 	align-items: stretch;
 	flex-shrink: 0;
 
+	@media (max-width: 1200px) {
+		margin: 20px 0;
+	}
+
 	@media (max-width: $screen-tablet) {
 		max-width: 380px;
+		-top: 65px;
+	}
+
+	@media (max-width: $screen-md-min) {
+		margin-right: 20px;
 	}
 
 	&__inner-wrapper {

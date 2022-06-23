@@ -1,30 +1,62 @@
 .contact {
-    width: 100%;
-    padding-top: 105px;
-    padding-bottom: 50px;
+	width: 100%;
+	padding-top: 105px;
+	padding-bottom: 50px;
 
-    &__title {
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $main_black_dark;
-    }
+	@media (max-width: $screen-xl-min) {
+		padding-top: 100px;
+	}
 
-    &__divider {
-        width: 170px;
-        border: 1px solid $main_dark_coral;
-        margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
 
-    &__discription {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        color: $main_gray_light;
-    }
+	&__title {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 42px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $main_black_dark;
+
+		@media (max-width: $screen-xl-min) {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+
+	&__divider {
+		width: 170px;
+		border: 1px solid $main_dark_coral;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 40px;
+
+		@media (max-width: $screen-xl-min) {
+			width: 142px;
+			margin-top: 50px;
+			margin-bottom: 35px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			width: 134px;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__discription {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		color: $main_gray_light;
+
+		@media (max-width: $screen-xl-min) {
+			font-size: 14px;
+			line-height: 16px;
+			margin: 0 15px;
+			padding-bottom: 35px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			padding-bottom: 60px;
+		}
+	}
 }

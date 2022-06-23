@@ -1,111 +1,198 @@
 .pricing {
-    width: 100%;
-    background-color: $pricing_white_bg;
-    padding-top: 105px;
+	width: 100%;
+	background-color: $pricing_white_bg;
+	padding-top: 105px;
 
-    &__about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 80px;
-    }
+	&__main {
+		width: 100%;
 
-    &__title {
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        display: flex;
-        text-transform: uppercase;
-        color: $main_black_dark;
-    }
+		@media (max-width: $screen-xl-min) {
+			padding: 0 15px;
+		}
+	}
 
-    &__divider {
-        width: 170px;
-        border: 1px solid $main_dark_coral;
-        margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 40px;
+	&__about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 80px;
+	}
 
-    }
+	&__title {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 42px;
+		display: flex;
+		text-transform: uppercase;
+		color: $main_black_dark;
 
-    &__discription {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: $main_gray_light;
-    }
+		@media (max-width: $screen-tablet) {
+			font-size: 24px;
+			line-height: 28px;
+		}
 
-    &__container {
-        width: 100%;
-        display: flex;
-        column-gap: 30px;
-    }
+	}
+
+	&__divider {
+		width: 170px;
+		border: 1px solid $main_dark_coral;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 40px;
+
+		@media (max-width: $screen-tablet) {
+			width: 142px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			width: 134px;
+			margin-top: 50px;
+			margin-bottom: 25px;
+		}
+
+	}
+
+	&__discription {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: $main_gray_light;
+
+		@media (max-width: $screen-tablet) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+
+	}
+
+	&__container {
+		width: 100%;
+		display: flex;
+		column-gap: 30px;
+
+		@media (max-width: $screen-tablet) {
+			column-gap: 25px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			flex-wrap: wrap;
+			column-gap: 0;
+
+			justify-content: center;
+		}
+
+	}
 }
 
 .pricing-card {
-    width: 370px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(0);
-    transition: all .5s;
+	width: 370px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateY(0);
+	transition: all .5s;
 
-    &:hover {
-        transform: translateY(-25px);
-        cursor: pointer;
-        filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
-    }
+	@media (max-width: $screen-tablet) {
+		width: 320px;
+	}
 
-    &__title {
-        width: 100%;
-        padding: 20px 0;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        text-transform: capitalize;
-        color: $main_white;
-        background-color: $main_black_dark;
-        border-bottom: 2px solid $pricing_white_bg;
-        text-align: center;
-    }
+	@media (max-width: $screen-sm-min) {
+		width: 290px;
+	}
 
-    &__price {
-        width: 100%;
-        padding: 32px 0;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        color: $main_white;
-        background-color: $main_black_dark;
-        text-align: center;
-        border-bottom: 2px solid $pricing_white_bg;
-    }
+	&:hover {
+		transform: translateY(-25px);
+		cursor: pointer;
+		filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+	}
 
-    &__subtitle {
-        width: 100%;
-        padding: 18px 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: rgba(255, 255, 255, 0.5);
-        background-color: $main_black_dark;
-        text-align: center;
-        border-bottom: 2px solid $pricing_white_bg;
-    }
+	&__title {
+		width: 100%;
+		padding: 20px 0;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
+		text-transform: capitalize;
+		color: $main_white;
+		background-color: $main_black_dark;
+		border-bottom: 2px solid $pricing_white_bg;
+		text-align: center;
 
-    &__discription {
-        width: 100%;
-        padding: 18px 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-transform: capitalize;
-        color: $main_gray_light;
-        background-color: $main_white;
-        text-align: center;
-        border-bottom: 2px solid $pricing_white_bg;
-    }
+		@media (max-width: $screen-tablet) {
+			padding: 20px 0 15px;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			font-size: 18px;
+			line-height: 25px;
+			padding: 15px 0;
+		}
+	}
+
+	&__price {
+		width: 100%;
+		padding: 32px 0;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		color: $main_white;
+		background-color: $main_black_dark;
+		text-align: center;
+		border-bottom: 2px solid $pricing_white_bg;
+
+		@media (max-width: $screen-tablet) {
+			padding: 30px 0;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+
+	&__subtitle {
+		width: 100%;
+		padding: 18px 0;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: rgba(255, 255, 255, 0.5);
+		background-color: $main_black_dark;
+		text-align: center;
+		border-bottom: 2px solid $pricing_white_bg;
+
+		@media (max-width: $screen-tablet) {
+			padding: 14px 0;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	&__discription {
+		width: 100%;
+		padding: 18px 0;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		text-transform: capitalize;
+		color: $main_gray_light;
+		background-color: $main_white;
+		text-align: center;
+		border-bottom: 2px solid $pricing_white_bg;
+
+		@media (max-width: $screen-tablet) {
+			padding: 14px 0;
+		}
+
+		@media (max-width: $screen-sm-min) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
 
 
 }

@@ -8,18 +8,18 @@ $main_dark_coral: #AB4949;
 $main_white_bg: #F8EFEF;
 $pricing_white_bg: #F5F5F5;
 $reviews_gray_bg: #E2E2E2;
+$main_gray_tabs: #C6CBCD;
 
+// Large tablets and desktops
+$screen-xl-min: 1200px;
 
 $screen-tablet: 1024px;
-
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
-
-// Small tablets (portrait view)
-$screen-md-min: 768px;
 
 // Tablets and small desktops
 $screen-lg-min: 992px;
 
-// Large tablets and desktops
-$screen-xl-min: 1200px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
